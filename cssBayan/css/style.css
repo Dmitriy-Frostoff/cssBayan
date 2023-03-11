@@ -282,6 +282,16 @@ body {
   }
 }
 
+@keyframes pulsation {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
 /* animations end*/
 
 /* =======================================================================================================*/
@@ -518,7 +528,7 @@ body {
   /* Decoration */
 
   /* Animation */
-  
+  animation: pulsation 1s infinite ease 0s;
   /* Various */
 
 }
@@ -1038,7 +1048,7 @@ body {
   font-style: normal;
   color:var(--hovered-color);
   /* Animation */
-
+  animation: pulsation 1s infinite ease 0s;
   /* Various */
   
 }
@@ -1076,7 +1086,7 @@ body {
   /* Decoration */
   
   /* Animation */
-  
+  animation: pulsation 1s infinite ease 0s;
   /* Various */
   
 }
@@ -1108,6 +1118,7 @@ body {
   fill:var(--hovered-color);
   /* Animation */
   transition: all 0.5s ease;
+  animation: pulsation 1s infinite ease 0s;
   /* Various */
 
 }
