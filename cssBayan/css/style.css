@@ -76,7 +76,7 @@ body {
   font-family: 'Inika', serif;
   font-style: normal;
   font-weight: 400;
-  color: #010201;
+  color: var(--primary-content-color);
   /* Decoration */
 
   /* Animation */
@@ -212,6 +212,57 @@ body {
 
 
 /* =======================================================================================================*/
+/* =========================================  Abstract start =========================================*/
+/* =======================================================================================================*/
+
+/* Varibales start */
+:root {
+  --main-background-color: #EDF2EC;
+  --primary-content-color: #010201;
+  --hovered-color: #E06733;
+  --primary-title-color: #717171;
+  --secondary-content-color: #636060;
+  --secondary-background-color: #FFFFFF;
+  --blink-one: #60C738;
+  --blink-two: #9F38C7;
+}
+/* Varibales end */
+
+/* animations start*/
+
+@keyframes text-blinking {
+  from {
+    color: var(--blink-one);
+  }
+
+  50% {
+    color: var(--blink-two);
+  }
+
+  to {
+    color: var(--blink-one);
+  }
+}
+
+@keyframes text-scaling {
+  from {
+    /* transform: translateX(-105%); */ /* running storke pretty too :) */
+    transform: scale(0.8);
+  }
+
+  to {
+    /* transform: translateX(105%); */
+    transform: scale(1);
+  }
+}
+
+/* animations end*/
+
+/* =======================================================================================================*/
+/* =========================================  Abstract end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
 /* =========================================   Header start =========================================*/
 /* =======================================================================================================*/
 
@@ -225,9 +276,9 @@ body {
   font-family: 'Inika', serif;
   font-weight: 400;
   font-size: 16px;
-  color: #010201;
+  color: var(--primary-content-color);
   /* Decoration */
-  background-color: #EDF2EC;
+  background-color: var(--main-background-color);
   /* Animation */
 
   /* Various */
@@ -382,7 +433,7 @@ body {
   /* Typography */
   font-style: normal;
   font-weight: 400;
-  color: #010201;
+  color: var(--primary-content-color);
 
   /* Decoration */
 
@@ -401,7 +452,7 @@ body {
   /* Typography */
   font-style: normal;
   font-weight: 400;
-  color: #010201;
+  color: var(--primary-content-color);
   /* Decoration */
 
   /* Animation */
@@ -418,7 +469,7 @@ body {
   /* Typography */
   font-style: normal;
   font-weight: 700;
-  color: #E06733;
+  color:var(--hovered-color);
 
   /* Decoration */
 
@@ -444,7 +495,7 @@ body {
   /* Typography */
 
   /* Decoration */
-  background-color: #EDF2EC;
+  background-color: var(--main-background-color);
   /* Animation */
 
   /* Various */
@@ -460,7 +511,7 @@ body {
       /* Typography */
     
       /* Decoration */
-      background-color: #EDF2EC;
+      background-color: var(--main-background-color);
       /* Animation */
   
       /* Various */
@@ -478,7 +529,7 @@ body {
       /* Typography */
     
       /* Decoration */
-      background-color: #EDF2EC;
+      background-color: var(--main-background-color);
       /* Animation */
   
       /* Various */
@@ -611,11 +662,12 @@ body {
   font-weight: 700;
   font-size: 45px;
   line-height: 50px;
-  color: #717171;
+  color: var(--primary-title-color);
   /* Decoration */
 
   /* Animation */
-
+  animation: text-blinking 3s 0s infinite alternate-reverse, 
+  text-scaling 11s 0s infinite alternate-reverse;
   /* Various */
 
 }
@@ -686,7 +738,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   line-height: 35px;
-  color: #636060;
+  color: var(--secondary-content-color);
   /* Decoration */
 
   /* Animation */
@@ -757,7 +809,7 @@ body {
   /* Typography */
   
   /* Decoration */
-  background: #FFFFFF;
+  background: var(--secondary-background-color);
   /* Animation */
   
   /* Various */
@@ -939,7 +991,7 @@ body {
   
   /* Decoration */
   font-style: normal;
-  color: #E06733;
+  color:var(--hovered-color);
   /* Animation */
 
   /* Various */
@@ -975,7 +1027,7 @@ body {
   /* Typography */
   font-style: normal;
   font-weight: 700;
-  color: #E06733;
+  color:var(--hovered-color);
   /* Decoration */
   
   /* Animation */
@@ -1008,7 +1060,7 @@ body {
   /* Typography */
   
   /* Decoration */
-  fill: #E06733;
+  fill:var(--hovered-color);
   /* Animation */
   transition: all 0.5s ease;
   /* Various */
