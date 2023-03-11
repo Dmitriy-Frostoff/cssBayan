@@ -256,6 +256,32 @@ body {
   }
 }
 
+@keyframes text-line-through {
+  from {
+    text-decoration: none;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+
+  to {
+    text-decoration: line-through;
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rotate-and-scaleX {
+  from {
+    rotate: 0deg;
+    transform: scaleX(1);
+  }
+
+  to {
+    rotate: 45deg;
+    transform: scaleX(1.5);
+  }
+}
+
 /* animations end*/
 
 /* =======================================================================================================*/
@@ -396,7 +422,25 @@ body {
   /* Decoration */
   
   /* Animation */
+  
+  /* Various */
 
+}
+
+.nav__logo:hover {
+  /* Position */
+  
+  /* block-model */
+  width: 21px;
+  height: 21px;
+  margin-right: 2px;
+
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+  animation: rotate-and-scaleX 1s infinite none;
   /* Various */
 
 }
@@ -718,7 +762,8 @@ body {
   /* Typography */
 
   /* Decoration */
-  text-decoration: line-through;
+  animation: text-line-through 3s infinite none;
+  /* text-decoration: line-through; */
   /* Animation */
 
   /* Various */
