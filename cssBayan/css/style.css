@@ -1,0 +1,1019 @@
+* {
+  /* Position */
+
+  /* block-model */
+  box-sizing: border-box;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+html {
+  /* Position */
+
+  /* block-model */
+  scroll-behavior: smooth;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+body {
+  /* Position */
+
+  /* block-model */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 767px) {
+  .body_scroll-lock {
+      /* Position */
+  
+      /* block-model */
+  
+      /* Typography */
+  
+      /* Decoration */
+      overflow: hidden;
+
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.main {
+  /* Position */
+
+  /* block-model */
+  height: 80vh;
+  /* Typography */
+  font-family: 'Inter', sans-serif;
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: #010201;
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+.main__container {
+  /* Position */
+
+  /* block-model */
+  margin: 0 auto;
+
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+.container {
+  /* Position */
+
+  /* block-model */
+  max-width: 1222px;
+  margin: 0 auto;
+
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 1222px) and (min-width: 769px) {
+  .container {
+      /* Position */
+  
+      /* block-model */
+      padding: 0px 54px;
+      /* Typography */
+  
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      /* Position */
+  
+      /* block-model */
+      max-width: 668px;
+      /* Typography */
+  
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 668px) and (min-width: 415px) {
+  .container {
+      /* Position */
+  
+      /* block-model */
+      padding: 0px 50px;
+      /* Typography */
+  
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+      /* Position */
+  
+      /* block-model */
+      padding: 0px 25px;
+
+      /* Typography */
+  
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+/* =======================================================================================================*/
+/* =========================================  common class start =========================================*/
+/* =======================================================================================================*/
+
+.hidden {
+  /* Position */
+  
+  /* block-model */
+  display: none;
+
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+/* =======================================================================================================*/
+/* =========================================  common class end =========================================*/
+/* =======================================================================================================*/
+
+
+/* =======================================================================================================*/
+/* =========================================   Header start =========================================*/
+/* =======================================================================================================*/
+
+.header {
+  /* Position */
+
+  /* block-model */
+  height: 10vh;
+  padding: 42px 0;
+  /* Typography */
+  font-family: 'Inika', serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #010201;
+  /* Decoration */
+  background-color: #EDF2EC;
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .header {
+      /* Position */
+  
+      /* block-model */
+      padding: 35px 0;
+      /* Typography */
+
+      /* Decoration */
+
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+      /* Position */
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+
+      /* block-model */
+      width: 100%;
+      padding: 35px 0;
+
+      /* Typography */
+
+      /* Decoration */
+
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.header__wrapper{
+  /* Position */
+
+  /* block-model */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 540px) {
+  .header__wrapper{
+      /* Position */
+      position: relative;
+      
+      /* block-model */
+      
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.logo {
+  /* Position */
+  
+  /* block-model */
+  flex-basis: 7%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: baseline;
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+.nav__logo {
+  /* Position */
+  
+  /* block-model */
+  width: 21px;
+  height: 21px;
+  margin-right: 2px;
+
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+.nav__link {
+  /* Position */
+
+  /* block-model */
+  
+  /* Typography */
+  white-space: nowrap;
+
+  /* Decoration */
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  /* Animation */
+  
+  /* Various */
+
+  /* Animation */
+  
+  /* Various */
+
+}
+
+.nav__link:link {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+  font-style: normal;
+  font-weight: 400;
+  color: #010201;
+
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+  
+
+}
+
+.nav__link:visited {
+  /* Position */
+  
+  /* block-model */
+  
+  /* Typography */
+  font-style: normal;
+  font-weight: 400;
+  color: #010201;
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+.nav__link:hover {
+  /* Position */
+  
+  /* block-model */
+
+  /* Typography */
+  font-style: normal;
+  font-weight: 700;
+  color: #E06733;
+
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+
+}
+
+/* =======================================================================================================*/
+/* =========================================  Header end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================  bayan section start =========================================*/
+/* =======================================================================================================*/
+
+.bayan {
+  /* Position */
+
+  /* block-model */
+  padding: 62px 0;
+  /* Typography */
+
+  /* Decoration */
+  background-color: #EDF2EC;
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan {
+      /* Position */
+  
+      /* block-model */
+      padding: 40px 0 70px;
+      /* Typography */
+    
+      /* Decoration */
+      background-color: #EDF2EC;
+      /* Animation */
+  
+      /* Various */
+  
+  }
+  
+}
+
+@media (max-width: 540px) {
+  .bayan {
+      /* Position */
+  
+      /* block-model */
+      padding: 24px 0 24px;
+      /* Typography */
+    
+      /* Decoration */
+      background-color: #EDF2EC;
+      /* Animation */
+  
+      /* Various */
+  
+  }
+  
+}
+
+.bayan__container {
+  /* Position */
+
+  /* block-model */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__container {
+      /* Position */
+  
+      /* block-model */
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .bayan__container {
+      /* Position */
+  
+      /* block-model */
+      padding-top: 96px;
+      
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.bayan__content-wrapper {
+  /* Position */
+
+  /* block-model */
+  flex-basis: 45%;
+  flex-grow: 1;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__content-wrapper {
+      /* Position */
+  
+      /* block-model */
+      flex-basis: 51.796%;
+      margin-right: 40px;
+      /* Typography */
+    
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+@media (max-width: 540px) {
+  .bayan__content-wrapper {
+      /* Position */
+  
+      /* block-model */
+      flex-basis: 100%;
+      margin-right: 0px;
+      /* Typography */
+    
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+.bayan__title {
+  /* Position */
+
+  /* block-model */
+  margin: 0 0 46px 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  color: #717171;
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__title {
+      /* Position */
+  
+      /* block-model */
+      margin: 0 0 28px 0;
+      /* Typography */
+      font-size: 35px;
+      line-height: 50px;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+@media (max-width: 540px) {
+  .bayan__title {
+      /* Position */
+  
+      /* block-model */
+      margin: 0px 0 23px 0;
+      /* Typography */
+      font-size: 25px;
+      line-height: 35px;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+.bayan__title-span {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+
+  /* Decoration */
+  text-decoration: line-through;
+  /* Animation */
+
+  /* Various */
+
+}
+
+.bayan__content {
+  /* Position */
+
+  /* block-model */
+  max-width: 93%;
+  flex-grow: 1;
+  margin: 0 0 47px 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 35px;
+  color: #636060;
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__content {
+      /* Position */
+  
+      /* block-model */
+      max-width: 93%;
+      flex-grow: 1;
+      margin: 0 0 35px 0;
+      padding-left: 5px;
+      /* Typography */
+      font-size: 16px;
+      line-height: 25px;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+@media (max-width: 540px) {
+  .bayan__content {
+      /* Position */
+  
+      /* block-model */
+      max-width: 100%;
+      flex-grow: 1;
+      margin: 0 0 25px 0;
+      padding-left: 0px;
+      /* Typography */
+      font-size: 16px;
+      line-height: 25px;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+/* =======================================================================================================*/
+/* =========================================  bayan section end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================  Footer start =========================================*/
+/* =======================================================================================================*/
+
+.footer {
+  /* Position */
+  
+  /* block-model */
+  height: 10vh;
+  padding: 35px 0px;
+
+  /* Typography */
+  
+  /* Decoration */
+  background: #FFFFFF;
+  /* Animation */
+  
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .footer {
+      /* Position */
+      
+      /* block-model */
+      padding: 33px 0 18px;
+  
+      /* Typography */
+      
+      /* Decoration */
+      
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .footer {
+      /* Position */
+      
+      /* block-model */
+      padding: 22px 0 7px;
+  
+      /* Typography */
+      
+      /* Decoration */
+      
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+.footer__container {
+  /* Position */
+  
+  /* block-model */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  align-items: center;
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+.footer__list {  
+  /* Position */
+  
+  /* block-model */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  
+  /* Typography */
+  line-height: 50px;
+  /* Decoration */
+  list-style: none;
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+@media (max-width: 768px) {
+  .footer__list {
+      /* Position */
+      
+      /* block-model */
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      /* Typography */
+      
+      /* Decoration */
+  
+      /* Animation */
+      
+      /* Various */
+      
+  }
+}
+
+.footer__list-item {
+  /* Position */
+  
+  /* block-model */
+  display: inline-block;
+  margin: 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  /* line-height: 50px; */
+  color: #000000;
+  /* Decoration */
+  list-style: none;
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+@media (max-width: 768px) {
+  .footer__list-item {
+      /* Position */
+      
+      /* block-model */
+
+      /* Typography */
+      font-size: 20px;
+      line-height: 24px;
+      /* line-height: 50px; */
+
+      /* Decoration */
+
+      /* Animation */
+      
+      /* Various */
+      
+  }
+}
+
+.footer__link {
+  /* Position */
+  
+  /* block-model */
+  margin: 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  /* line-height: 50px; */
+  color: #000000;
+  text-decoration: none;
+  /* Decoration */
+  list-style: none;
+  /* Animation */
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  /* Various */
+  
+}
+
+.footer__link:hover,
+.footer__link:active {
+  /* Position */
+  
+  /* block-model */
+  
+  /* Typography */
+  
+  /* Decoration */
+  font-style: normal;
+  color: #E06733;
+  /* Animation */
+
+  /* Various */
+  
+}
+
+.footer__link:visited,
+.footer__link:visited,
+.footer__link:visited {
+  /* Position */
+  
+  /* block-model */
+  
+  /* Typography */
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  /* Decoration */
+  
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+.footer__link:visited:hover,
+.footer__link:visited:hover,
+.footer__link:visited:hover {
+  /* Position */
+  
+  /* block-model */
+  
+  /* Typography */
+  font-style: normal;
+  font-weight: 700;
+  color: #E06733;
+  /* Decoration */
+  
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+.footer__rsschool-logo {
+  /* Position */
+  
+  /* block-model */
+  width: 120px;
+  height: 35px;
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  transition: all 0.5s ease;
+  /* Various */
+
+}
+
+.footer__icon:hover {
+  /* Position */
+  
+  /* block-model */
+
+  /* Typography */
+  
+  /* Decoration */
+  fill: #E06733;
+  /* Animation */
+  transition: all 0.5s ease;
+  /* Various */
+
+}
+/* =======================================================================================================*/
+/* =========================================  Footer end =========================================*/
+/* =======================================================================================================*/
