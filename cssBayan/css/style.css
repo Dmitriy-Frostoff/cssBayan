@@ -70,7 +70,7 @@ body {
   /* Position */
 
   /* block-model */
-  height: 70vh;
+
   /* Typography */
   font-family: 'Inter', sans-serif;
   font-family: 'Inika', serif;
@@ -89,6 +89,7 @@ body {
   /* Position */
 
   /* block-model */
+  min-height: 85vh;
   margin: 0 auto;
 
   /* Typography */
@@ -306,7 +307,6 @@ body {
   /* Position */
 
   /* block-model */
-  height: 10vh;
   padding: 42px 0;
   /* Typography */
   font-family: 'Inika', serif;
@@ -341,10 +341,10 @@ body {
 @media (max-width: 540px) {
   .header {
       /* Position */
-      position: fixed;
+      /* position: fixed; 
       top: 0;
       left: 0;
-      z-index: 10;
+      z-index: 10; */ /* use this if fixed header required */
 
       /* block-model */
       width: 100%;
@@ -535,6 +535,201 @@ body {
 
 /* =======================================================================================================*/
 /* =========================================  Header end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================  welcome section start =========================================*/
+/* =======================================================================================================*/
+
+.welcome {
+  /* Position */
+
+  /* block-model */
+  padding: 62px 0;
+  /* Typography */
+
+  /* Decoration */
+  background-color: var(--main-background-color);
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .welcome {
+      /* Position */
+  
+      /* block-model */
+      padding: 40px 0 70px;
+      /* Typography */
+    
+      /* Decoration */
+      background-color: var(--main-background-color);
+      /* Animation */
+  
+      /* Various */
+  
+  }
+  
+}
+
+@media (max-width: 540px) {
+  .welcome {
+      /* Position */
+  
+      /* block-model */
+      padding: 24px 0 24px;
+      /* Typography */
+    
+      /* Decoration */
+      background-color: var(--main-background-color);
+      /* Animation */
+  
+      /* Various */
+  
+  }
+  
+}
+
+.welcome__container {
+  /* Position */
+
+  /* block-model */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .welcome__container {
+      /* Position */
+  
+      /* block-model */
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .welcome__container {
+      /* Position */
+  
+      /* block-model */
+      justify-content: center;
+      
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.welcome__title {
+  /* Position */
+
+  /* block-model */
+  width: 70%;
+  margin: 0 0 46px 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 50px;
+  text-align: center;
+  color: var(--primary-title-color);
+  /* Decoration */
+
+  /* Animation */
+  animation: text-blinking 3s 0s infinite alternate-reverse, 
+    text-scaling 11s 0s infinite alternate-reverse;
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .welcome__title {
+      /* Position */
+  
+      /* block-model */
+      margin: 0 0 28px 0;
+      /* Typography */
+      font-size: 35px;
+      line-height: 50px;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+@media (max-width: 540px) {
+  .welcome__title {
+      /* Position */
+  
+      /* block-model */
+      margin: 0px 0 23px 0;
+      /* Typography */
+      font-size: 25px;
+      line-height: 35px;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+.welcome__title-span {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+
+  /* Decoration */
+  animation: text-line-through 3s infinite none;
+  /* text-decoration: line-through; */
+  /* Animation */
+
+  /* Various */
+
+}
+
+/* =======================================================================================================*/
+/* =========================================  welcome section end =========================================*/
 /* =======================================================================================================*/
 
 /* =======================================================================================================*/
@@ -858,8 +1053,6 @@ body {
   /* Position */
   
   /* block-model */
-  height: 10vh;
-  padding: 35px 0px;
 
   /* Typography */
   
@@ -940,7 +1133,7 @@ body {
   padding: 0;
   
   /* Typography */
-  line-height: 50px;
+  line-height: 70px;
   /* Decoration */
   list-style: none;
   /* Animation */
@@ -959,6 +1152,7 @@ body {
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: center;
+      gap: 15px;
       /* Typography */
       
       /* Decoration */
@@ -982,7 +1176,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   /* line-height: 50px; */
-  color: #000000;
+  color: var(--primary-content-color);
   /* Decoration */
   list-style: none;
   /* Animation */
@@ -1022,7 +1216,7 @@ body {
   font-weight: 400;
   font-size: 20px;
   /* line-height: 50px; */
-  color: #000000;
+  color: var(--primary-content-color);
   text-decoration: none;
   /* Decoration */
   list-style: none;
@@ -1063,7 +1257,7 @@ body {
   /* Typography */
   font-style: normal;
   font-weight: 400;
-  color: #000000;
+  color: var(--primary-content-color);
   /* Decoration */
   
   /* Animation */
@@ -1101,6 +1295,21 @@ body {
   
   /* Decoration */
 
+  /* Animation */
+  transition: all 0.5s ease;
+  /* Various */
+
+}
+
+.footer__icon {
+  /* Position */
+  
+  /* block-model */
+  display: block;
+  /* Typography */
+  
+  /* Decoration */
+  fill:var(--primary-content-color);
   /* Animation */
   transition: all 0.5s ease;
   /* Various */
