@@ -807,7 +807,7 @@ img {
       /* Typography */
     
       /* Decoration */
-      
+
       /* Animation */
   
       /* Various */
@@ -1241,7 +1241,7 @@ img {
   /* Position */
 
   /* block-model */
-  width: 50%;
+  width: 20%;
   /* Typography */
 
   /* Decoration */
@@ -1250,6 +1250,24 @@ img {
   transition: all 1s ease;
   /* Various */
 
+}
+
+@media (max-width: 768px) {
+  .bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+  /* Position */
+
+  /* block-model */
+  width: 40%;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
 }
 
 @media (max-width: 540px) {
@@ -1288,24 +1306,25 @@ img {
 
 }
 
-
-
-.bayan__container:hover, 
-.bayan__container:hover .bayan__subtitle,
-.bayan__checkbox:checked + .bayan__subtitle{
-  /* Position */
-
-  /* block-model */
+@media (max-width: 1222px) and (min-width: 769px) {
+  .bayan__container:hover, 
+  .bayan__container:hover .bayan__subtitle,
+  .bayan__checkbox:checked + .bayan__subtitle{
+    /* Position */
   
-  /* Typography */
-  color: var(--primary-content-color);
-  /* Decoration */
-  cursor: pointer;
-  /* Animation */
-  transition: all 1s ease;
-  /* Various */
-
+    /* block-model */
+    
+    /* Typography */
+    color: var(--primary-content-color);
+    /* Decoration */
+    cursor: pointer;
+    /* Animation */
+    transition: all 1s ease;
+    /* Various */
+  
+  }
 }
+
 /* =======================================================================================================*/
 /* =========================================  bayan logic and animations end ===========================*/
 /* =======================================================================================================*/
