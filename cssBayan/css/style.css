@@ -789,7 +789,7 @@ img {
       /* Typography */
     
       /* Decoration */
-      background-color: var(--main-background-color);
+
       /* Animation */
   
       /* Various */
@@ -807,7 +807,7 @@ img {
       /* Typography */
     
       /* Decoration */
-      background-color: var(--main-background-color);
+      
       /* Animation */
   
       /* Various */
@@ -863,8 +863,6 @@ img {
   
       /* block-model */
       width: 80%;
-      padding-top: 96px;
-      
       /* Typography */
     
       /* Decoration */
@@ -961,7 +959,6 @@ img {
   
       /* block-model */
       flex-basis: 51.796%;
-      margin-right: 40px;
       /* Typography */
     
       /* Decoration */
@@ -1058,7 +1055,7 @@ img {
   /* Position */
 
   /* block-model */
-
+  flex: 1 1 50%;
   /* Typography */
   
   /* Decoration */
@@ -1134,10 +1131,10 @@ img {
   line-height: 35px;
   color: var(--secondary-content-color);
   /* Decoration */
-  transform: scaleY(0);
+  transform: scale(0);
   opacity: 0;
   /* Animation */
-  transition: all 1s ease;
+  transition: all 0.75s ease;
   /* Various */
 
 }
@@ -1212,13 +1209,29 @@ img {
   /* Position */
 
   /* block-model */
-  transform: scaleY(1);
+
   /* Typography */
   color: var(--primary-content-color);
   /* Decoration */
-  opacity: 1;
+
   /* Animation */
   transition: all 1s ease;
+  /* Various */
+
+}
+
+.bayan__checkbox:checked + .bayan__subtitle + .bayan__content,
+.bayan__checkbox:hover + .bayan__subtitle + .bayan__content {
+  /* Position */
+
+  /* block-model */
+  transform: scale(1);
+  /* Typography */
+
+  /* Decoration */
+  opacity: 1;
+  /* Animation */
+  transition: all 0.75s ease;
   /* Various */
 
 }
@@ -1238,6 +1251,25 @@ img {
   /* Various */
 
 }
+
+@media (max-width: 540px) {
+  .bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+  /* Position */
+
+  /* block-model */
+  width: 100%;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+}
+
 
 .bayan__checkbox:checked + .bayan__subtitle > .fa-solid,
 .bayan__checkbox:hover + .bayan__subtitle > .fa-solid,
