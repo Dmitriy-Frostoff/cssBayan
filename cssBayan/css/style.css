@@ -262,6 +262,18 @@ img {
   }
 }
 
+@keyframes light-text-scaling {
+  from {
+    /* transform: translateX(-105%); */ /* running storke pretty too :) */
+    transform: scale(0.95);
+  }
+
+  to {
+    /* transform: translateX(105%); */
+    transform: scale(1);
+  }
+}
+
 @keyframes text-scaling {
   from {
     /* transform: translateX(-105%); */ /* running storke pretty too :) */
@@ -1052,7 +1064,7 @@ img {
   /* Decoration */
 
   /* Animation */
-  animation: text-scaling 3s infinite ease alternate-reverse 0s;
+  animation: light-text-scaling 3s infinite ease alternate-reverse 0s;
   /* Various */
 
 }
@@ -1108,8 +1120,12 @@ img {
 
   /* block-model */
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1;
-  margin: 0 0 47px 0;
+  margin: 0 auto;
   /* Typography */
   font-family: 'Inter';
   font-style: normal;
@@ -1173,7 +1189,6 @@ img {
   /* Position */
 
   /* block-model */
-  width: 100%;
   margin: 0;
   padding: 20px 0;
   /* Typography */
@@ -1202,6 +1217,22 @@ img {
   color: var(--primary-content-color);
   /* Decoration */
   opacity: 1;
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+.bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+  /* Position */
+
+  /* block-model */
+  width: 50%;
+  /* Typography */
+
+  /* Decoration */
+
   /* Animation */
   transition: all 1s ease;
   /* Various */
