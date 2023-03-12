@@ -187,6 +187,22 @@ body {
   
   }
 }
+
+img {
+  /* Position */
+  
+  /* block-model */
+  display: block;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+
+}
 /* =======================================================================================================*/
 /* =========================================  common class start =========================================*/
 /* =======================================================================================================*/
@@ -224,6 +240,7 @@ body {
   --primary-title-color: #717171;
   --secondary-content-color: #636060;
   --secondary-background-color: #FFFFFF;
+  --bayan-label-title: #3371FF;
   --blink-one: #60C738;
   --blink-two: #9F38C7;
 }
@@ -744,7 +761,7 @@ body {
   /* Typography */
 
   /* Decoration */
-  background-color: var(--main-background-color);
+  background-color:var(--secondary-background-color);
   /* Animation */
 
   /* Various */
@@ -792,10 +809,10 @@ body {
 
   /* block-model */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   
   /* Typography */
 
@@ -833,6 +850,7 @@ body {
       /* Position */
   
       /* block-model */
+      width: 80%;
       padding-top: 96px;
       
       /* Typography */
@@ -846,16 +864,79 @@ body {
   }
 }
 
+.bayan__title {
+  /* Position */
+  
+  /* block-model */
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  flex-grow: 1;
+
+  /* Typography */
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: var(--primary-content-color);
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__title {
+      /* Position */
+      
+      /* block-model */
+      flex-basis: 100%;
+      padding: 0;
+
+      /* Typography */
+      text-align: center;
+
+      /* Decoration */
+      order: -3;
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .bayan__title {
+      /* Position */
+      
+      /* block-model */
+
+      /* Typography */
+      font-size: 25px;
+      line-height: 33px;
+
+      /* Decoration */
+      
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
 .bayan__content-wrapper {
   /* Position */
 
   /* block-model */
-  flex-basis: 45%;
+  width: 100%;
   flex-grow: 1;
   /* Typography */
 
   /* Decoration */
-
+  border-top: 1px solid var(--primary-title-color);
   /* Animation */
 
   /* Various */
@@ -897,80 +978,127 @@ body {
       /* Various */
   
   }
-
 }
 
-.bayan__title {
-  /* Position */
 
+.bayan__subtitle {
+  /* Position */
+  position: relative;
   /* block-model */
-  margin: 0 0 46px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 9px 0 0 0;
+  padding: 10px 0px;
   /* Typography */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 50px;
-  color: var(--primary-title-color);
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--bayan-label-title);
   /* Decoration */
-
+  
   /* Animation */
-  animation: text-blinking 3s 0s infinite alternate-reverse, 
-  text-scaling 11s 0s infinite alternate-reverse;
+  transition: all 1s ease;
   /* Various */
 
 }
 
 @media (max-width: 768px) {
-  .bayan__title {
+  .bayan__subtitle {
       /* Position */
-  
+      
       /* block-model */
-      margin: 0 0 28px 0;
+      margin: 8px 0 0px;
       /* Typography */
-      font-size: 35px;
-      line-height: 50px;
+      
       /* Decoration */
-  
+      
       /* Animation */
-  
+      
       /* Various */
   
   }
-
 }
 
 @media (max-width: 540px) {
-  .bayan__title {
+  .bayan__subtitle {
       /* Position */
-  
+      
       /* block-model */
-      margin: 0px 0 23px 0;
+      margin: 10px 0 0 0;
+
       /* Typography */
-      font-size: 25px;
-      line-height: 35px;
+      
       /* Decoration */
-  
+      
       /* Animation */
-  
+      
       /* Various */
   
   }
-
 }
 
-.bayan__title-span {
+.bayan__span {
   /* Position */
 
   /* block-model */
 
   /* Typography */
-
+  
   /* Decoration */
-  animation: text-line-through 3s infinite none;
-  /* text-decoration: line-through; */
+
+  /* Animation */
+  animation: text-scaling 3s infinite ease alternate-reverse 0s;
+  /* Various */
+
+}
+
+.checkbox {
+  /* Position */
+
+  /* block-model */
+  
+  /* Typography */
+  
+  /* Decoration */
+
   /* Animation */
 
+  /* Various */
+
+}
+
+.bayan__checkbox {
+  /* Position */
+  position: absolute;
+  z-index: -1;
+  /* block-model */
+
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+.fa-solid {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  transition: all 1s ease;
   /* Various */
 
 }
@@ -979,7 +1107,7 @@ body {
   /* Position */
 
   /* block-model */
-  max-width: 93%;
+  max-width: 100%;
   flex-grow: 1;
   margin: 0 0 47px 0;
   /* Typography */
@@ -990,9 +1118,10 @@ body {
   line-height: 35px;
   color: var(--secondary-content-color);
   /* Decoration */
-
+  transform: scaleY(0);
+  opacity: 0;
   /* Animation */
-
+  transition: all 1s ease;
   /* Various */
 
 }
@@ -1002,7 +1131,7 @@ body {
       /* Position */
   
       /* block-model */
-      max-width: 93%;
+      max-width: 100%;
       flex-grow: 1;
       margin: 0 0 35px 0;
       padding-left: 5px;
@@ -1038,11 +1167,84 @@ body {
       /* Various */
   
   }
+}
+
+.bayan__meme {
+  /* Position */
+
+  /* block-model */
+  width: 100%;
+  margin: 0;
+  padding: 20px 0;
+  /* Typography */
+  color: var(--secondary-content-color);
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+/* =======================================================================================================*/
+/* =========================================  bayan section end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================  bayan logic and animations start ===========================*/
+/* =======================================================================================================*/
+.bayan__checkbox:checked + .bayan__subtitle + .bayan__content,
+.bayan__checkbox:hover + .bayan__subtitle + .bayan__content {
+  /* Position */
+
+  /* block-model */
+  transform: scaleY(1);
+  /* Typography */
+  color: var(--primary-content-color);
+  /* Decoration */
+  opacity: 1;
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
 
 }
 
+.bayan__checkbox:checked + .bayan__subtitle > .fa-solid,
+.bayan__checkbox:hover + .bayan__subtitle > .fa-solid,
+.bayan__container:hover .fa-solid {
+  /* Position */
+
+  /* block-model */
+  
+  /* Typography */
+
+  /* Decoration */
+  transform: rotate(45deg);
+  /* Animation */
+  transition: all 0.5s ease;
+  /* Various */
+
+}
+
+
+
+.bayan__container:hover, 
+.bayan__container:hover .bayan__subtitle,
+.bayan__checkbox:checked + .bayan__subtitle{
+  /* Position */
+
+  /* block-model */
+  
+  /* Typography */
+  color: var(--primary-content-color);
+  /* Decoration */
+  cursor: pointer;
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
 /* =======================================================================================================*/
-/* =========================================  bayan section end =========================================*/
+/* =========================================  bayan logic and animations end ===========================*/
 /* =======================================================================================================*/
 
 /* =======================================================================================================*/
