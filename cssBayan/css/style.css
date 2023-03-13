@@ -192,7 +192,7 @@ img {
   /* Position */
   
   /* block-model */
-  display: block;
+  display: inline-block;
   /* Typography */
 
   /* Decoration */
@@ -955,7 +955,7 @@ img {
 
 .bayan__content-wrapper {
   /* Position */
-  position: relative;
+
   /* block-model */
   width: 100%;
   /* Typography */
@@ -1015,7 +1015,7 @@ img {
   justify-content: space-between;
   align-items: center;
   margin: 9px 0 0 0;
-  padding: 10px 0px;
+  padding: 20px 0px;
   /* Typography */
   font-family: 'Inter';
   font-style: normal;
@@ -1132,7 +1132,7 @@ img {
   position: absolute;
   z-index: -1;
   /* block-model */
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1150,7 +1150,7 @@ img {
   transform: scale(0);
   opacity: 0;
   /* Animation */
-  transition: all 0.75s ease;
+  /* transition: all 0.75s ease; */
   /* Various */
 
 }
@@ -1220,8 +1220,8 @@ img {
 /* =======================================================================================================*/
 /* =========================================  bayan logic and animations start ===========================*/
 /* =======================================================================================================*/
-.bayan__checkbox:checked + .bayan__subtitle + .bayan__content,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content {
+.bayan__checkbox:checked + .bayan__subtitle > .bayan__content,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content {
   /* Position */
 
   /* block-model */
@@ -1236,15 +1236,17 @@ img {
 
 }
 
-.bayan__checkbox:checked + .bayan__subtitle + .bayan__content,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content {
+.bayan__checkbox:checked + .bayan__subtitle > .bayan__content,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content {
   /* Position */
   position: static;
+  z-index: 0;
   /* block-model */
-  transform: scale(1);
+  
   /* Typography */
 
   /* Decoration */
+  transform: scale(1);
   opacity: 1;
   /* Animation */
   transition: all 1s ease;
@@ -1252,8 +1254,8 @@ img {
 
 }
 
-.bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+.bayan__checkbox:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
   /* Position */
 
   /* block-model */
@@ -1269,8 +1271,8 @@ img {
 }
 
 @media (max-width: 768px) {
-  .bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+  .bayan__checkbox:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
   /* Position */
 
   /* block-model */
@@ -1287,8 +1289,8 @@ img {
 }
 
 @media (max-width: 540px) {
-  .bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+  .bayan__checkbox:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
   /* Position */
 
   /* block-model */
@@ -1304,10 +1306,8 @@ img {
 }
 }
 
-
 .bayan__checkbox:checked + .bayan__subtitle > .fa-solid,
-.bayan__checkbox:hover + .bayan__subtitle > .fa-solid,
-.bayan__container:hover .fa-solid {
+.bayan__checkbox:hover + .bayan__subtitle > .fa-solid {
   /* Position */
 
   /* block-model */
