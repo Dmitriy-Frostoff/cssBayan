@@ -1322,7 +1322,7 @@ img {
 
 }
 
-@media (min-width: 769px) {
+@media (hover: hover) and (min-width: 769px) {
   .bayan__container:hover, 
   .bayan__container:hover .bayan__subtitle,
   .bayan__checkbox:checked + .bayan__subtitle{
