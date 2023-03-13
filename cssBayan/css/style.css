@@ -19,7 +19,7 @@ html {
   /* block-model */
   scroll-behavior: smooth;
   /* Typography */
-
+  font-size: 0.625rem;
   /* Decoration */
 
   /* Animation */
@@ -106,7 +106,7 @@ body {
   /* Position */
 
   /* block-model */
-  max-width: 1222px;
+  max-width: 122.2rem;
   margin: 0 auto;
 
   /* Typography */
@@ -124,7 +124,7 @@ body {
       /* Position */
   
       /* block-model */
-      padding: 0px 54px;
+      padding: 0 5.4rem;
       /* Typography */
   
       /* Decoration */
@@ -141,7 +141,7 @@ body {
       /* Position */
   
       /* block-model */
-      max-width: 668px;
+      max-width: 66.8rem;
       /* Typography */
   
       /* Decoration */
@@ -158,7 +158,7 @@ body {
       /* Position */
   
       /* block-model */
-      padding: 0px 50px;
+      padding: 0 5rem;
       /* Typography */
   
       /* Decoration */
@@ -175,7 +175,7 @@ body {
       /* Position */
   
       /* block-model */
-      padding: 0px 25px;
+      padding: 0 2.5rem;
 
       /* Typography */
   
@@ -192,7 +192,7 @@ img {
   /* Position */
   
   /* block-model */
-  display: block;
+  display: inline-block;
   /* Typography */
 
   /* Decoration */
@@ -352,11 +352,11 @@ img {
   /* Position */
 
   /* block-model */
-  padding: 42px 0;
+  padding: 4.2rem 0;
   /* Typography */
   font-family: 'Inika', serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 1.6rem;
   color: var(--primary-content-color);
   /* Decoration */
   background-color: var(--main-background-color);
@@ -371,7 +371,7 @@ img {
       /* Position */
   
       /* block-model */
-      padding: 35px 0;
+      padding: 3.5rem 0;
       /* Typography */
 
       /* Decoration */
@@ -393,7 +393,7 @@ img {
 
       /* block-model */
       width: 100%;
-      padding: 35px 0;
+      padding: 3.5rem 0;
 
       /* Typography */
 
@@ -468,9 +468,9 @@ img {
   /* Position */
   
   /* block-model */
-  width: 21px;
-  height: 21px;
-  margin-right: 2px;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-right: 2rem;
 
   /* Typography */
 
@@ -486,9 +486,9 @@ img {
   /* Position */
   
   /* block-model */
-  width: 21px;
-  height: 21px;
-  margin-right: 2px;
+  width: 21rem;
+  height: 21rem;
+  margin-right: 2rem;
 
   /* Typography */
 
@@ -590,7 +590,7 @@ img {
   /* Position */
 
   /* block-model */
-  padding: 62px 0;
+  padding: 6.2rem 0;
   /* Typography */
 
   /* Decoration */
@@ -606,7 +606,7 @@ img {
       /* Position */
   
       /* block-model */
-      padding: 40px 0 70px;
+      padding: 4rem 0 7rem;
       /* Typography */
     
       /* Decoration */
@@ -624,7 +624,7 @@ img {
       /* Position */
   
       /* block-model */
-      padding: 24px 0 24px;
+      padding: 2.4rem 0 2.4rem;
       /* Typography */
     
       /* Decoration */
@@ -701,13 +701,13 @@ img {
 
   /* block-model */
   width: 70%;
-  margin: 0 0 46px 0;
+  margin: 0 0 4.6rem 0;
   /* Typography */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 45px;
-  line-height: 50px;
+  font-size: 4.5rem;
+  line-height: 5rem;
   text-align: center;
   color: var(--primary-title-color);
   /* Decoration */
@@ -724,10 +724,10 @@ img {
       /* Position */
   
       /* block-model */
-      margin: 0 0 28px 0;
+      margin: 0 0 2.8rem 0;
       /* Typography */
-      font-size: 35px;
-      line-height: 50px;
+      font-size: 3.5rem;
+      line-height: 5rem;
       /* Decoration */
   
       /* Animation */
@@ -743,10 +743,10 @@ img {
       /* Position */
   
       /* block-model */
-      margin: 0px 0 23px 0;
+      margin: 0 0 2.3rem 0;
       /* Typography */
-      font-size: 25px;
-      line-height: 35px;
+      font-size: 2.5rem;
+      line-height: 3.5rem;
       /* Decoration */
   
       /* Animation */
@@ -785,7 +785,7 @@ img {
   /* Position */
 
   /* block-model */
-  padding: 62px 0;
+  padding: 6.2rem 0;
   /* Typography */
 
   /* Decoration */
@@ -801,7 +801,7 @@ img {
       /* Position */
   
       /* block-model */
-      padding: 40px 0 70px;
+      padding: 4rem 0 7rem;
       /* Typography */
     
       /* Decoration */
@@ -819,7 +819,7 @@ img {
       /* Position */
   
       /* block-model */
-      padding: 24px 0 24px;
+      padding: 2.4rem 0 2.4rem;
       /* Typography */
     
       /* Decoration */
@@ -896,15 +896,15 @@ img {
   /* block-model */
   width: 100%;
   margin: 0;
-  padding: 10px 0;
+  padding: 1rem 0;
   flex-grow: 1;
 
   /* Typography */
   font-family: 'Inika';
   font-style: normal;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
+  font-size: 4rem;
+  line-height: 5.2rem;
   color: var(--primary-content-color);
   /* Decoration */
 
@@ -941,8 +941,8 @@ img {
       /* block-model */
 
       /* Typography */
-      font-size: 25px;
-      line-height: 33px;
+      font-size: 2.5rem;
+      line-height: 3.3rem;
 
       /* Decoration */
       
@@ -955,13 +955,13 @@ img {
 
 .bayan__content-wrapper {
   /* Position */
-  position: relative;
+
   /* block-model */
   width: 100%;
   /* Typography */
 
   /* Decoration */
-  border-top: 1px solid var(--primary-title-color);
+  border-top: 0.1rem solid var(--primary-title-color);
   /* Animation */
   transition: all 1s ease;
   /* Various */
@@ -992,7 +992,7 @@ img {
   
       /* block-model */
       flex-basis: 100%;
-      margin-right: 0px;
+      margin-right: 0;
       /* Typography */
     
       /* Decoration */
@@ -1014,14 +1014,13 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 9px 0 0 0;
-  padding: 10px 0px;
+  padding: 2.5rem 0;
   /* Typography */
   font-family: 'Inter';
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 2rem;
+  line-height: 2rem;
   color: var(--bayan-label-title);
   /* Decoration */
   
@@ -1036,7 +1035,7 @@ img {
       /* Position */
       
       /* block-model */
-      margin: 8px 0 0px;
+      margin: 0.8rem 0 0;
       /* Typography */
       
       /* Decoration */
@@ -1053,7 +1052,7 @@ img {
       /* Position */
       
       /* block-model */
-      margin: 10px 0 0 0;
+      margin: 1rem 0 0 0;
 
       /* Typography */
       
@@ -1132,7 +1131,7 @@ img {
   position: absolute;
   z-index: -1;
   /* block-model */
-  max-width: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1143,14 +1142,14 @@ img {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 35px;
+  font-size: 2rem;
+  line-height: 3.5rem;
   color: var(--secondary-content-color);
   /* Decoration */
   transform: scale(0);
   opacity: 0;
   /* Animation */
-  transition: all 0.75s ease;
+  /* transition: all 0.75s ease; */
   /* Various */
 
 }
@@ -1162,11 +1161,11 @@ img {
       /* block-model */
       max-width: 100%;
       flex-grow: 1;
-      margin: 0 0 35px 0;
-      padding-left: 5px;
+      margin: 0 0 3.5rem 0;
+      padding-left: 0.5rem;
       /* Typography */
-      font-size: 16px;
-      line-height: 25px;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
       /* Decoration */
   
       /* Animation */
@@ -1184,11 +1183,11 @@ img {
       /* block-model */
       max-width: 100%;
       flex-grow: 1;
-      margin: 0 0 25px 0;
-      padding-left: 0px;
+      margin: 0 0 2.5rem 0;
+      padding-left: 0;
       /* Typography */
-      font-size: 16px;
-      line-height: 25px;
+      font-size: 1.6rem;
+      line-height: 2.5rem;
       /* Decoration */
   
       /* Animation */
@@ -1203,7 +1202,7 @@ img {
 
   /* block-model */
   margin: 0;
-  padding: 20px 0;
+  padding: 2rem 0;
   /* Typography */
   color: var(--secondary-content-color);
   /* Decoration */
@@ -1220,8 +1219,8 @@ img {
 /* =======================================================================================================*/
 /* =========================================  bayan logic and animations start ===========================*/
 /* =======================================================================================================*/
-.bayan__checkbox:checked + .bayan__subtitle + .bayan__content,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content {
+.bayan__checkbox:checked + .bayan__subtitle > .bayan__content,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content {
   /* Position */
 
   /* block-model */
@@ -1236,15 +1235,17 @@ img {
 
 }
 
-.bayan__checkbox:checked + .bayan__subtitle + .bayan__content,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content {
+.bayan__checkbox:checked + .bayan__subtitle > .bayan__content,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content {
   /* Position */
   position: static;
+  z-index: 0;
   /* block-model */
-  transform: scale(1);
+  
   /* Typography */
 
   /* Decoration */
+  transform: scale(1);
   opacity: 1;
   /* Animation */
   transition: all 1s ease;
@@ -1252,8 +1253,8 @@ img {
 
 }
 
-.bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+.bayan__checkbox:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
   /* Position */
 
   /* block-model */
@@ -1269,8 +1270,8 @@ img {
 }
 
 @media (max-width: 768px) {
-  .bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+  .bayan__checkbox:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
   /* Position */
 
   /* block-model */
@@ -1287,8 +1288,8 @@ img {
 }
 
 @media (max-width: 540px) {
-  .bayan__checkbox:checked + .bayan__subtitle + .bayan__content > .bayan__meme,
-.bayan__checkbox:hover + .bayan__subtitle + .bayan__content > .bayan__meme {
+  .bayan__checkbox:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__checkbox:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
   /* Position */
 
   /* block-model */
@@ -1304,10 +1305,8 @@ img {
 }
 }
 
-
 .bayan__checkbox:checked + .bayan__subtitle > .fa-solid,
-.bayan__checkbox:hover + .bayan__subtitle > .fa-solid,
-.bayan__container:hover .fa-solid {
+.bayan__checkbox:hover + .bayan__subtitle > .fa-solid {
   /* Position */
 
   /* block-model */
@@ -1322,7 +1321,7 @@ img {
 
 }
 
-@media (min-width: 769px) {
+@media (hover: hover) and (min-width: 769px) {
   .bayan__container:hover, 
   .bayan__container:hover .bayan__subtitle,
   .bayan__checkbox:checked + .bayan__subtitle{
@@ -1369,7 +1368,7 @@ img {
       /* Position */
       
       /* block-model */
-      padding: 33px 0 18px;
+      padding: 3.3rem 0 1.8rem;
   
       /* Typography */
       
@@ -1387,7 +1386,7 @@ img {
       /* Position */
       
       /* block-model */
-      padding: 22px 0 7px;
+      padding: 2.2rem 0 0.7rem;
   
       /* Typography */
       
@@ -1433,7 +1432,7 @@ img {
   padding: 0;
   
   /* Typography */
-  line-height: 70px;
+  line-height: 7rem;
   /* Decoration */
   list-style: none;
   /* Animation */
@@ -1452,7 +1451,7 @@ img {
       flex-wrap: nowrap;
       justify-content: flex-start;
       align-items: center;
-      gap: 15px;
+      gap: 1.5rem;
       /* Typography */
       
       /* Decoration */
@@ -1474,8 +1473,8 @@ img {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  /* line-height: 50px; */
+  font-size: 2rem;
+  /* line-height: 5.rem; */
   color: var(--primary-content-color);
   /* Decoration */
   list-style: none;
@@ -1492,9 +1491,9 @@ img {
       /* block-model */
 
       /* Typography */
-      font-size: 20px;
-      line-height: 24px;
-      /* line-height: 50px; */
+      font-size: 2rem;
+      line-height: 2.4rem;
+      /* line-height: 5rem; */
 
       /* Decoration */
 
@@ -1514,8 +1513,8 @@ img {
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  /* line-height: 50px; */
+  font-size: 2rem;
+  /* line-height: 5rem; */
   color: var(--primary-content-color);
   text-decoration: none;
   /* Decoration */
@@ -1589,8 +1588,8 @@ img {
   /* Position */
   
   /* block-model */
-  width: 120px;
-  height: 35px;
+  width: 12rem;
+  height: 3.5rem;
   /* Typography */
   
   /* Decoration */
