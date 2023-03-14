@@ -1,0 +1,1633 @@
+* {
+  /* Position */
+
+  /* block-model */
+  box-sizing: border-box;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+html {
+  /* Position */
+
+  /* block-model */
+  scroll-behavior: smooth;
+  /* Typography */
+  font-size: 0.625rem;
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+body {
+  /* Position */
+
+  /* block-model */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 0;
+
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 767px) {
+  .body_scroll-lock {
+      /* Position */
+  
+      /* block-model */
+  
+      /* Typography */
+  
+      /* Decoration */
+      overflow: hidden;
+
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.main {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+  font-family: 'Inter', sans-serif;
+  font-family: 'Inika', serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--primary-content-color);
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+.main__container {
+  /* Position */
+
+  /* block-model */
+  min-height: 85vh;
+  margin: 0 auto;
+
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+.container {
+  /* Position */
+
+  /* block-model */
+  max-width: 122.2rem;
+  margin: 0 auto;
+
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 1222px) and (min-width: 769px) {
+  .container {
+      /* Position */
+  
+      /* block-model */
+      padding: 0 5.4rem;
+      /* Typography */
+  
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+      /* Position */
+  
+      /* block-model */
+      max-width: 66.8rem;
+      /* Typography */
+  
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 668px) and (min-width: 415px) {
+  .container {
+      /* Position */
+  
+      /* block-model */
+      padding: 0 5rem;
+      /* Typography */
+  
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+      /* Position */
+  
+      /* block-model */
+      padding: 0 2.5rem;
+
+      /* Typography */
+  
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+img {
+  /* Position */
+  
+  /* block-model */
+  display: inline-block;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+
+}
+/* =======================================================================================================*/
+/* =========================================  common class start =========================================*/
+/* =======================================================================================================*/
+
+.hidden {
+  /* Position */
+  
+  /* block-model */
+  display: none;
+
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+/* =======================================================================================================*/
+/* =========================================  common class end =========================================*/
+/* =======================================================================================================*/
+
+
+/* =======================================================================================================*/
+/* =========================================  Abstract start =========================================*/
+/* =======================================================================================================*/
+
+/* Varibales start */
+:root {
+  --main-background-color: #EDF2EC;
+  --primary-content-color: #010201;
+  --hovered-color: #E06733;
+  --primary-title-color: #717171;
+  --secondary-content-color: #636060;
+  --secondary-background-color: #FFFFFF;
+  --bayan-label-title: #3371FF;
+  --blink-one: #60C738;
+  --blink-two: #9F38C7;
+}
+/* Varibales end */
+
+/* animations start*/
+
+@keyframes text-blinking {
+  from {
+    color: var(--blink-one);
+  }
+
+  50% {
+    color: var(--blink-two);
+  }
+
+  to {
+    color: var(--blink-one);
+  }
+}
+
+@keyframes light-text-scaling {
+  from {
+    /* transform: translateX(-105%); */ /* running storke pretty too :) */
+    transform: scale(0.95);
+  }
+
+  to {
+    /* transform: translateX(105%); */
+    transform: scale(1);
+  }
+}
+
+@keyframes text-scaling {
+  from {
+    /* transform: translateX(-105%); */ /* running storke pretty too :) */
+    transform: scale(0.8);
+  }
+
+  to {
+    /* transform: translateX(105%); */
+    transform: scale(1);
+  }
+}
+
+@keyframes text-line-through {
+  from {
+    text-decoration: none;
+    transform-origin: right;
+    transform: scaleX(0);
+  }
+
+  to {
+    text-decoration: line-through;
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+}
+
+@keyframes rotate-and-scaleX {
+  from {
+    rotate: 0deg;
+    transform: scaleX(1);
+  }
+
+  to {
+    rotate: 45deg;
+    transform: scaleX(1.5);
+  }
+}
+
+@keyframes pulsation {
+  from {
+    transform: scale(0.9);
+  }
+
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes smooth-visibility-change {
+  from {
+    display: none;
+    /* transform: scale(0); */
+  }
+
+  1% {
+    display: block;
+  }
+
+  to {
+    /* transform: scale(1); */
+    display: block;
+  }
+}
+
+/* animations end*/
+
+/* =======================================================================================================*/
+/* =========================================  Abstract end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================   Header start =========================================*/
+/* =======================================================================================================*/
+
+.header {
+  /* Position */
+
+  /* block-model */
+  padding: 4.2rem 0;
+  /* Typography */
+  font-family: 'Inika', serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: var(--primary-content-color);
+  /* Decoration */
+  background-color: var(--main-background-color);
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .header {
+      /* Position */
+  
+      /* block-model */
+      padding: 3.5rem 0;
+      /* Typography */
+
+      /* Decoration */
+
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .header {
+      /* Position */
+      /* position: fixed; 
+      top: 0;
+      left: 0;
+      z-index: 10; */ /* use this if fixed header required */
+
+      /* block-model */
+      width: 100%;
+      padding: 3.5rem 0;
+
+      /* Typography */
+
+      /* Decoration */
+
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.header__wrapper{
+  /* Position */
+
+  /* block-model */
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 540px) {
+  .header__wrapper{
+      /* Position */
+      position: relative;
+      
+      /* block-model */
+      
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.logo {
+  /* Position */
+  
+  /* block-model */
+  flex-basis: 7%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: baseline;
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+.nav__logo {
+  /* Position */
+  
+  /* block-model */
+  width: 2.1rem;
+  height: 2.1rem;
+  margin-right: 2rem;
+
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+  
+  /* Various */
+
+}
+
+.nav__logo:hover {
+  /* Position */
+  
+  /* block-model */
+  width: 21rem;
+  height: 21rem;
+  margin-right: 2rem;
+
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+  animation: rotate-and-scaleX 1s infinite none;
+  /* Various */
+
+}
+
+.nav__link {
+  /* Position */
+
+  /* block-model */
+  
+  /* Typography */
+  white-space: nowrap;
+
+  /* Decoration */
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  /* Animation */
+  
+  /* Various */
+
+  /* Animation */
+  
+  /* Various */
+
+}
+
+.nav__link:link {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+  font-style: normal;
+  font-weight: 400;
+  color: var(--primary-content-color);
+
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+  
+
+}
+
+.nav__link:visited {
+  /* Position */
+  
+  /* block-model */
+  
+  /* Typography */
+  font-style: normal;
+  font-weight: 400;
+  color: var(--primary-content-color);
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+.nav__link:hover {
+  /* Position */
+  
+  /* block-model */
+
+  /* Typography */
+  font-style: normal;
+  font-weight: 700;
+  color:var(--hovered-color);
+
+  /* Decoration */
+
+  /* Animation */
+  animation: pulsation 1s infinite ease 0s;
+  /* Various */
+
+}
+
+/* =======================================================================================================*/
+/* =========================================  Header end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================  welcome section start =========================================*/
+/* =======================================================================================================*/
+
+.welcome {
+  /* Position */
+
+  /* block-model */
+  padding: 6.2rem 0;
+  /* Typography */
+
+  /* Decoration */
+  background-color: var(--main-background-color);
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .welcome {
+      /* Position */
+  
+      /* block-model */
+      padding: 4rem 0 7rem;
+      /* Typography */
+    
+      /* Decoration */
+      background-color: var(--main-background-color);
+      /* Animation */
+  
+      /* Various */
+  
+  }
+  
+}
+
+@media (max-width: 540px) {
+  .welcome {
+      /* Position */
+  
+      /* block-model */
+      padding: 2.4rem 0 2.4rem;
+      /* Typography */
+    
+      /* Decoration */
+      background-color: var(--main-background-color);
+      /* Animation */
+  
+      /* Various */
+  
+  }
+  
+}
+
+.welcome__container {
+  /* Position */
+
+  /* block-model */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .welcome__container {
+      /* Position */
+  
+      /* block-model */
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .welcome__container {
+      /* Position */
+  
+      /* block-model */
+      
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.welcome__title {
+  /* Position */
+
+  /* block-model */
+  width: 70%;
+  margin: 0 0 4.6rem 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 5rem;
+  text-align: center;
+  color: var(--primary-title-color);
+  /* Decoration */
+
+  /* Animation */
+  animation: text-blinking 3s 0s infinite alternate-reverse, 
+    text-scaling 11s 0s infinite alternate-reverse;
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .welcome__title {
+      /* Position */
+  
+      /* block-model */
+      margin: 0 0 2.8rem 0;
+      /* Typography */
+      font-size: 3.5rem;
+      line-height: 5rem;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+@media (max-width: 540px) {
+  .welcome__title {
+      /* Position */
+  
+      /* block-model */
+      margin: 0 0 2.3rem 0;
+      /* Typography */
+      font-size: 2.5rem;
+      line-height: 3.5rem;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+.welcome__title-span {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+
+  /* Decoration */
+  animation: text-line-through 3s infinite none;
+  /* text-decoration: line-through; */
+  /* Animation */
+
+  /* Various */
+
+}
+
+/* =======================================================================================================*/
+/* =========================================  welcome section end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================  bayan section start =========================================*/
+/* =======================================================================================================*/
+
+.bayan {
+  /* Position */
+
+  /* block-model */
+  padding: 6.2rem 0;
+  /* Typography */
+
+  /* Decoration */
+  background-color:var(--secondary-background-color);
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan {
+      /* Position */
+  
+      /* block-model */
+      padding: 4rem 0 7rem;
+      /* Typography */
+    
+      /* Decoration */
+
+      /* Animation */
+  
+      /* Various */
+  
+  }
+  
+}
+
+@media (max-width: 540px) {
+  .bayan {
+      /* Position */
+  
+      /* block-model */
+      padding: 2.4rem 0 2.4rem;
+      /* Typography */
+    
+      /* Decoration */
+
+      /* Animation */
+  
+      /* Various */
+  
+  }
+  
+}
+
+.bayan__container {
+  /* Position */
+
+  /* block-model */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  /* Typography */
+
+  /* Decoration */
+  
+  /* Animation */
+
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__container {
+      /* Position */
+  
+      /* block-model */
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .bayan__container {
+      /* Position */
+  
+      /* block-model */
+      width: 80%;
+      /* Typography */
+    
+      /* Decoration */
+      
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.bayan__title {
+  /* Position */
+  
+  /* block-model */
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  flex-grow: 1;
+
+  /* Typography */
+  font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.2rem;
+  color: var(--primary-content-color);
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__title {
+      /* Position */
+      
+      /* block-model */
+      flex-basis: 100%;
+      padding: 0;
+
+      /* Typography */
+      text-align: center;
+
+      /* Decoration */
+      order: -3;
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .bayan__title {
+      /* Position */
+      
+      /* block-model */
+
+      /* Typography */
+      font-size: 2.5rem;
+      line-height: 3.3rem;
+
+      /* Decoration */
+      
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+.bayan__content-wrapper {
+  /* Position */
+
+  /* block-model */
+  width: 100%;
+  /* Typography */
+
+  /* Decoration */
+  border-top: 0.1rem solid var(--primary-title-color);
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__content-wrapper {
+      /* Position */
+  
+      /* block-model */
+      
+      /* Typography */
+    
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+@media (max-width: 540px) {
+  .bayan__content-wrapper {
+      /* Position */
+  
+      /* block-model */
+      flex-basis: 100%;
+      margin-right: 0;
+      /* Typography */
+    
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+
+.bayan__subtitle {
+  /* Position */
+  position: relative;
+  /* block-model */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2rem;
+  color: var(--bayan-label-title);
+  /* Decoration */
+  
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__subtitle {
+      /* Position */
+      
+      /* block-model */
+      margin: 0.8rem 0 0;
+      /* Typography */
+      
+      /* Decoration */
+      
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .bayan__subtitle {
+      /* Position */
+      
+      /* block-model */
+      margin: 1rem 0 0 0;
+
+      /* Typography */
+      font-size: 1.6rem;
+      /* Decoration */
+      
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+.bayan__span {
+  /* Position */
+
+  /* block-model */
+  flex: 1 1 50%;
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  animation: light-text-scaling 3s infinite ease alternate-reverse 0s;
+  /* Various */
+
+}
+
+.radio {
+  /* Position */
+
+  /* block-model */
+  
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+
+.bayan__radio {
+  /* Position */
+  position: absolute;
+  z-index: -1;
+  /* block-model */
+
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+.fa-solid {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+.bayan__content {
+  /* Position */
+  position: absolute;
+  z-index: -1;
+  /* block-model */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  margin: 0 auto;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  line-height: 3.5rem;
+  color: var(--secondary-content-color);
+  /* Decoration */
+  transform: scale(0);
+  opacity: 0;
+  /* Animation */
+  /* transition: all 0.75s ease; */
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__content {
+      /* Position */
+  
+      /* block-model */
+      max-width: 100%;
+      flex-grow: 1;
+      margin: 1rem 0 3.5rem 0;
+      padding-left: 0.5rem;
+      /* Typography */
+      font-size: 1.6rem;
+      line-height: 2.5rem;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+
+}
+
+@media (max-width: 540px) {
+  .bayan__content {
+      /* Position */
+  
+      /* block-model */
+      max-width: 100%;
+      flex-grow: 1;
+      margin: 1rem 0 2.5rem 0;
+      padding-left: 0;
+      /* Typography */
+      font-size: 1.4rem;
+      line-height: 2.5rem;
+      /* Decoration */
+  
+      /* Animation */
+  
+      /* Various */
+  
+  }
+}
+
+.bayan__meme {
+  /* Position */
+
+  /* block-model */
+  margin: 0;
+  padding: 2rem 0;
+  /* Typography */
+  color: var(--secondary-content-color);
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+/* =======================================================================================================*/
+/* =========================================  bayan section end =========================================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================  bayan logic and animations start ===========================*/
+/* =======================================================================================================*/
+.bayan__radio:checked + .bayan__subtitle > .bayan__content,
+.bayan__radio:hover + .bayan__subtitle > .bayan__content {
+  /* Position */
+
+  /* block-model */
+
+  /* Typography */
+  color: var(--primary-content-color);
+  /* Decoration */
+
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+.bayan__radio:checked + .bayan__subtitle > .bayan__content,
+.bayan__radio:hover + .bayan__subtitle > .bayan__content {
+  /* Position */
+  position: static;
+  z-index: 0;
+  /* block-model */
+  
+  /* Typography */
+
+  /* Decoration */
+  transform: scale(1);
+  opacity: 1;
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+.bayan__radio:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__radio:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
+  /* Position */
+
+  /* block-model */
+  width: 20%;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+  transition: all 1s ease;
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .bayan__radio:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__radio:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
+  /* Position */
+
+  /* block-model */
+  width: 40%;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+}
+
+@media (max-width: 540px) {
+  .bayan__radio:checked + .bayan__subtitle > .bayan__content > .bayan__meme,
+.bayan__radio:hover + .bayan__subtitle > .bayan__content > .bayan__meme {
+  /* Position */
+
+  /* block-model */
+  width: 100%;
+  /* Typography */
+
+  /* Decoration */
+
+  /* Animation */
+
+  /* Various */
+
+}
+}
+
+.bayan__radio:checked + .bayan__subtitle > .fa-solid,
+.bayan__radio:hover + .bayan__subtitle > .fa-solid {
+  /* Position */
+
+  /* block-model */
+  
+  /* Typography */
+
+  /* Decoration */
+  transform: rotate(45deg);
+  /* Animation */
+  transition: all 0.5s ease;
+  /* Various */
+
+}
+
+@media (hover: hover) and (min-width: 769px) {
+  .bayan__container:hover, 
+  .bayan__container:hover .bayan__subtitle,
+  .bayan__radio:checked + .bayan__subtitle{
+    /* Position */
+  
+    /* block-model */
+    
+    /* Typography */
+    color: var(--primary-content-color);
+    /* Decoration */
+    cursor: pointer;
+    /* Animation */
+    transition: all 1s ease;
+    /* Various */
+  
+  }
+}
+
+/* =======================================================================================================*/
+/* =========================================  bayan logic and animations end ===========================*/
+/* =======================================================================================================*/
+
+/* =======================================================================================================*/
+/* =========================================  Footer start =========================================*/
+/* =======================================================================================================*/
+
+.footer {
+  /* Position */
+  
+  /* block-model */
+
+  /* Typography */
+  
+  /* Decoration */
+  background: var(--main-background-color);
+  /* Animation */
+  
+  /* Various */
+
+}
+
+@media (max-width: 768px) {
+  .footer {
+      /* Position */
+      
+      /* block-model */
+      padding: 3.3rem 0 1.8rem;
+  
+      /* Typography */
+      
+      /* Decoration */
+      
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+@media (max-width: 540px) {
+  .footer {
+      /* Position */
+      
+      /* block-model */
+      padding: 2.2rem 0 0.7rem;
+  
+      /* Typography */
+      
+      /* Decoration */
+      
+      /* Animation */
+      
+      /* Various */
+  
+  }
+}
+
+.footer__container {
+  /* Position */
+  
+  /* block-model */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  align-items: center;
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+.footer__list {  
+  /* Position */
+  
+  /* block-model */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content:space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  
+  /* Typography */
+  line-height: 7rem;
+  /* Decoration */
+  list-style: none;
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+@media (max-width: 768px) {
+  .footer__list {
+      /* Position */
+      
+      /* block-model */
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1.5rem;
+      /* Typography */
+      
+      /* Decoration */
+  
+      /* Animation */
+      
+      /* Various */
+      
+  }
+}
+
+.footer__list-item {
+  /* Position */
+  
+  /* block-model */
+  display: inline-block;
+  margin: 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  /* line-height: 5.rem; */
+  color: var(--primary-content-color);
+  /* Decoration */
+  list-style: none;
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+@media (max-width: 768px) {
+  .footer__list-item {
+      /* Position */
+      
+      /* block-model */
+
+      /* Typography */
+      font-size: 2rem;
+      line-height: 2.4rem;
+      /* line-height: 5rem; */
+
+      /* Decoration */
+
+      /* Animation */
+      
+      /* Various */
+      
+  }
+}
+
+.footer__link {
+  /* Position */
+  
+  /* block-model */
+  margin: 0;
+  /* Typography */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2rem;
+  /* line-height: 5rem; */
+  color: var(--primary-content-color);
+  text-decoration: none;
+  /* Decoration */
+  list-style: none;
+  /* Animation */
+  text-decoration: none;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+  /* Various */
+  
+}
+
+.footer__link:hover,
+.footer__link:active {
+  /* Position */
+  
+  /* block-model */
+  
+  /* Typography */
+  
+  /* Decoration */
+  font-style: normal;
+  color:var(--hovered-color);
+  /* Animation */
+  animation: pulsation 1s infinite ease 0s;
+  /* Various */
+  
+}
+
+.footer__link:visited,
+.footer__link:visited,
+.footer__link:visited {
+  /* Position */
+  
+  /* block-model */
+  
+  /* Typography */
+  font-style: normal;
+  font-weight: 400;
+  color: var(--primary-content-color);
+  /* Decoration */
+  
+  /* Animation */
+  
+  /* Various */
+  
+}
+
+.footer__link:visited:hover,
+.footer__link:visited:hover,
+.footer__link:visited:hover {
+  /* Position */
+  
+  /* block-model */
+  
+  /* Typography */
+  font-style: normal;
+  font-weight: 700;
+  color:var(--hovered-color);
+  /* Decoration */
+  
+  /* Animation */
+  animation: pulsation 1s infinite ease 0s;
+  /* Various */
+  
+}
+
+.footer__rsschool-logo {
+  /* Position */
+  
+  /* block-model */
+  width: 12rem;
+  height: 3.5rem;
+  /* Typography */
+  
+  /* Decoration */
+
+  /* Animation */
+  transition: all 0.5s ease;
+  /* Various */
+
+}
+
+.footer__icon {
+  /* Position */
+  
+  /* block-model */
+  display: block;
+  /* Typography */
+  
+  /* Decoration */
+  fill:var(--primary-content-color);
+  /* Animation */
+  transition: all 0.5s ease;
+  /* Various */
+
+}
+
+.footer__icon:hover {
+  /* Position */
+  
+  /* block-model */
+
+  /* Typography */
+  
+  /* Decoration */
+  fill:var(--hovered-color);
+  /* Animation */
+  transition: all 0.5s ease;
+  animation: pulsation 1s infinite ease 0s;
+  /* Various */
+
+}
+/* =======================================================================================================*/
+/* =========================================  Footer end =========================================*/
+/* =======================================================================================================*/
