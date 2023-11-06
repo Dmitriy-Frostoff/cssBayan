@@ -18,4 +18,4 @@ Features:
 
 6) All sections, parts of projects are separeted (as far as it only possible over the file, usage of preprocessors like Sass/SCSS is strongly prohibited by technical specification, usage of Webpack - too :sad:)
 
-So, click the 👉[link pure cssBayan by Dmitriy Frostoff](https://dmitriy-frostoff.github.io/cssBayan/) and have fun! ✨✨✨ :octocat: :basecampy:😉😋))) 
+So, click the 👉[link pure cssBayan by Dmitriy Frostoff](https://dmitriy-frostoff.github.io/cssBayan/cssBayan/index.html) and have fun! ✨✨✨ :octocat: :basecampy:😉😋))) 
